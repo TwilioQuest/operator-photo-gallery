@@ -1,0 +1,28 @@
+@import "fonts";
+
+body {
+  background-color: #261b2e;
+  color: white;
+  font-family: $base-font-stack;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1200px;
+  margin: 4rem auto;
+}
+
+.nineSliceContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.outerNineSliceContent {
+  width: fit-content !important;
+  height: fit-content !important;
+}
