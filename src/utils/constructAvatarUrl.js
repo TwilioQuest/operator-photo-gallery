@@ -55,8 +55,6 @@ function constructAvatarUrl(player) {
     Object.assign(query, AVATAR_DEFAULTS[player.avatar - 1]);
   }
 
-  console.log(player);
-
   // Configure in-game item loadout
   Object.entries(player.loadout).forEach(([slot, item]) => {
     query[slot] = item;

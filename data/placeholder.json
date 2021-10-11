@@ -1,0 +1,19 @@
+{
+  "player": {
+    "avatar": 3,
+    "customAvatar": {
+      "sc": 0,
+      "ec": 0,
+      "hc": 0,
+      "hs": 0,
+      "uri": ""
+    },
+    "loadout": {
+      "body": "tshirt",
+      "legs": "jeans"
+    }
+  },
+  "github": {
+    "username": "placeholder"
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 
-import rmkubik from "../../data/rmkubik.json";
+import players from "../../data/**/*.json";
+
 import descriptionBorderInner from "../../assets/images/DescriptionBorder_Inner.png";
 import descriptionBorderOuter from "../../assets/images/DescriptionBorder_Outer.png";
 import "../styles/App.scss";
@@ -20,8 +21,8 @@ const App = () => {
           imageUrl={descriptionBorderInner}
           contentClassNames="nineSliceContent"
         >
-          {new Array(20).fill("").map(() => (
-            <PlayerPhoto player={rmkubik} />
+          {Object.entries(players).map(([key, player]) => (
+            <PlayerPhoto key={key} player={player} />
           ))}
         </NineSlice>
       </NineSlice>
